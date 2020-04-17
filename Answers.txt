@@ -1,0 +1,7 @@
+1) The application was designed to allow the user to specify what book, word length and order they wish to use, the application is also written in Dot Net Core to allow for an easier deployment to a range of systems, the user also doesn't have to know what the extension the file has, as it will search for the file in the folder and automatically select one.
+
+2)The application could be improved by removing some of the looping and replace it with a different method of cataloguing the words, things could also be split into different methods better to allow for reuse of the functionality better
+
+3)A way that i believe it could be inproved speed wise would be to implimenting some parallel processing of words, you would just need to be careful not to lose count due to overlapping additions of a word.
+
+4) this could be turned into a cloud service by changing it to a site based in azure app service where you can upload the file and then run the code based on the updloaded file rather than a file located on the users computer.
