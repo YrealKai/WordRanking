@@ -41,14 +41,15 @@ namespace WordRanking
                 {
                     if (word.Length >= length)
                     {
-                        if (!listing.ContainsKey(word))
+                        var lowerWord = word.ToLower();
+                        if (!listing.ContainsKey(lowerWord))
                         {
-                            listing.Add(word, 1);
+                            listing.Add(lowerWord, 1);
                         }
                         else
                         {
-                            var currentCount = listing[word];
-                            listing[word] = currentCount + 1;
+                            var currentCount = listing[lowerWord];
+                            listing[lowerWord] = currentCount + 1;
                         }
                     }
                 }
